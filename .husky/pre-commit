@@ -1,1 +1,3 @@
-yarn pre-commit && yarn lint && yarn lint:fix
+yarn lint
+yarn lint:fix
+yarn pre-commit
