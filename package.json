@@ -5,18 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 4000",
+    "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "prettier": "prettier --write */**/*.{js,jsx,json,ts,tsx,scss,css,md}",
     "pre-commit": "lint-staged",
     "prepare": "husky install",
     "commitlint": "commitlint --edit"
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": ".husky/prepare-commit-msg"
-    }
   },
   "dependencies": {
     "next": "14.1.4",
