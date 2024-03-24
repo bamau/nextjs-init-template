@@ -14,4 +14,4 @@ if grep -q '^Revert' "$1"; then
 fi
 
 # Append the branch name to the commit message
-echo "$branch" >> "$1"
+echo "($branch)" >> "$1"
