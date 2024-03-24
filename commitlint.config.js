@@ -39,6 +39,7 @@ module.exports = {
         'security',
         'style',
         'test',
+        'custom-type',
       ],
     ],
   },
