@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Get the current branch name
+branch=$(git symbolic-ref --short HEAD)
+
+# Check if the commit message starts with "Merge"
+if grep -q '^Merge' "$1"; then
+    exit 0
+fi
+
+# Check if the commit message starts with "Revert"
+if grep -q '^Revert' "$1"; then
+    exit 0
+fi
+
+# Append the branch name to the commit message
+echo "$branch" >> "$1"
