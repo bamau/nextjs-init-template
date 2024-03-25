@@ -1,6 +1,0 @@
-{
-  "hooks": {
-    "pre-commit": "lint-staged",
-    "prepare-commit-msg": ".husky/prepare-commit-msg"
-  }
-}
