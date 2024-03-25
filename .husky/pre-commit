@@ -1,4 +1,4 @@
 yarn lint
 yarn lint:fix
 yarn pre-commit
-git add .
+git add

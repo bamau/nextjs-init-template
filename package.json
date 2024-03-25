@@ -12,7 +12,7 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "pre-commit": "lint-staged — config .lintstagedrc",
-    "prepare": "husky install",
+    "postinstall": "husky",
     "commitlint": "commitlint --edit"
   },
   "dependencies": {
