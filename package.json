@@ -11,7 +11,7 @@
     "build:main": "env-cmd -f .env/.env.production next build",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "pre-commit": "lint-staged — config .lintstagedrc",
+    "pre-commit": "lint-staged",
     "postinstall": "husky",
     "commitlint": "commitlint --edit"
   },
