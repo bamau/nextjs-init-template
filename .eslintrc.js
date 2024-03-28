@@ -58,7 +58,15 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
-    'prettier/prettier': 'warn',
+    'prettier/prettier': 'error',
+    'import/prefer-default-export': 'off',
+    'no-param-reassign': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/ban-types': 'off',
+    'no-plusplus': 'off',
+    'no-case-declarations': 'off',
   },
   settings: {
     react: {

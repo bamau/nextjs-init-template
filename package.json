@@ -10,9 +10,9 @@
     "start:main": "env-cmd -f .env/.env.production next start",
     "build:main": "env-cmd -f .env/.env.production next build",
     "lint": "next lint",
+    "postinstall": "husky",
     "lint:fix": "next lint --fix",
     "pre-commit": "lint-staged",
-    "postinstall": "husky",
     "commitlint": "commitlint --edit"
   },
   "dependencies": {
