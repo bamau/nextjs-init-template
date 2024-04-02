@@ -41,6 +41,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
+    'no-console': 'warn',
   },
   settings: {
     react: {
