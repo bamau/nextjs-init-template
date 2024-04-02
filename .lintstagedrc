@@ -1,4 +1,4 @@
 {
-  "**/*.{js,jsx,ts,tsx}": ["prettier --check .", "eslint --fix", "eslint --config path/to/.eslintrc.js", "git add"],
+  "**/*.{js,jsx,ts,tsx}": ["prettier --check .", "eslint --fix", "eslint --config .eslintrc.js", "git add"],
   "**/*.{json,css,md}": ["prettier --write --check"]
 }
