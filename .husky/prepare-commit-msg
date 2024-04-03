@@ -1,17 +1,17 @@
 #!/bin/sh
 # Check if HEAD is detached
 if [ -z "$(git symbolic-ref -q HEAD)" ]; then
-    return
+    exit 0
 fi
 # Get the current branch name
 branch=$(git symbolic-ref --short HEAD)
 # Check if the commit message already contains branch name
 if grep -q "($branch)" "$1"; then
-    return
+    exit 0
 fi
 # Check if the commit message starts with "Merge" or "Revert"
 if grep -qE '^Merge\|^Revert' "$1"; then
-    return
+    exit 0
 fi
 
 # Append the branch name to the commit message
