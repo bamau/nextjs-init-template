@@ -13,9 +13,18 @@ module.exports = {
     node: true,
   },
   root: true,
-  extends: ['next', 'eslint:recommended', 'plugin:prettier/recommended', 'plugin:@typescript-eslint/recommended'],
-  plugins: ['@typescript-eslint', 'react', 'react-hooks'],
+  extends: [
+    'next',
+    'next/core-web-vitals',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
+    'plugin:react-hooks/recommended',
+  ],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier'],
   rules: {
+    'prettier/prettier': 'error',
     // JavaScript rules
     'no-var': 'error',
     'no-plusplus': 'off',
