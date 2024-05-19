@@ -7,5 +7,5 @@
   "jsxSingleQuote": true,
   "tabWidth": 2,
   "trailingComma": "es5",
-  "plugins": ["eslint-config-prettier"]
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
